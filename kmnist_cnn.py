@@ -68,7 +68,7 @@ def model_train(X, y):
     model.compile(loss='categorical_crossentropy',
                   optimizer=opt, metrics=['accuracy'])
 
-    model.fit(X, y, batch_size=32, nb_epoch=100)
+    model.fit(X, y, batch_size=128, nb_epoch=12)
 
     # モデルの保存
     model.sava('./kmnist_cnn.h5')
